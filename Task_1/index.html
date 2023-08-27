@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<!-- Code Alpha Task 1 -->
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multipage Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<ul>
+			<li class="active form_1_progessbar">
+				<div>
+					<p>1</p>
+				</div>
+			</li>
+			<li class="form_2_progessbar">
+				<div>
+					<p>2</p>
+				</div>
+			</li>
+			<li class="form_3_progessbar">
+				<div>
+					<p>3</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="form_wrap">
+		<div class="form_1 data_info">
+			<h2>Survey Form</h2>
+			<form action="connection.php" method="post">
+				<div class="form_container">
+					<div class="input_wrap">
+						<label>Email Address</label>
+						<input type="email" name="email" class="input" id="email" required>
+					</div>
+					<div class="input_wrap">
+						<label>First Name</label>
+						<input type="text" name="fname" class="input" id="first_name" required>
+					</div>
+					<div class="input_wrap">
+						<label>Last Name</label>
+						<input type="text" name="lame" class="input" id="last_name">
+					</div>
+					<div class="input_wrap">
+						<label>Mobile No</label>
+						<input type="text" name="mobile" class="input" id="mobile_no" required>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="form_2 data_info" style="display: none;">
+			<h2>Personal Details</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label>Age</label>
+						<input type="text" name="Age" class="input" id="address">
+					</div>
+					<div class="input_wrap">
+						<label>Gender</label>
+						<select name="gender" id="field" required>
+							<option value="gender">Select</option>
+							<option value="m">Male</option>
+							<option value="f">Female</option>
+							<option value="other">Other</option>
+							<option value="no">Prefer Not to Say</option>
+						</select>
+					</div>
+					<div class="input_wrap">
+						<label>State</label>
+						<select name="sstate" id="field" required>
+							<option value="state">Select State</option>
+							<option value="Andhra Pradesh">Andhra Pradesh</option>
+							<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+							<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+							<option value="Assam">Assam</option>
+							<option value="Bihar">Bihar</option>
+							<option value="Chandigarh">Chandigarh</option>
+							<option value="Chhattisgarh">Chhattisgarh</option>
+							<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+							<option value="Daman and Diu">Daman and Diu</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Lakshadweep">Lakshadweep</option>
+							<option value="Puducherry">Puducherry</option>
+							<option value="Goa">Goa</option>
+							<option value="Gujarat">Gujarat</option>
+							<option value="Haryana">Haryana</option>
+							<option value="Himachal Pradesh">Himachal Pradesh</option>
+							<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+							<option value="Jharkhand">Jharkhand</option>
+							<option value="Karnataka">Karnataka</option>
+							<option value="Kerala">Kerala</option>
+							<option value="Madhya Pradesh">Madhya Pradesh</option>
+							<option value="Maharashtra">Maharashtra</option>
+							<option value="Manipur">Manipur</option>
+							<option value="Meghalaya">Meghalaya</option>
+							<option value="Mizoram">Mizoram</option>
+							<option value="Nagaland">Nagaland</option>
+							<option value="Odisha">Odisha</option>
+							<option value="Punjab">Punjab</option>
+							<option value="Rajasthan">Rajasthan</option>
+							<option value="Sikkim">Sikkim</option>
+							<option value="Tamil Nadu">Tamil Nadu</option>
+							<option value="Telangana">Telangana</option>
+							<option value="Tripura">Tripura</option>
+							<option value="Uttar Pradesh">Uttar Pradesh</option>
+							<option value="Uttarakhand">Uttarakhand</option>
+							<option value="West Bengal">West Bengal</option>
+							</select>
+					</div>
+					<div class="input_wrap">
+						<label>Pincode</label>
+						<input type="text" name="pincode" class="input" id="pin">
+					</div>
+					<div class="input_wrap">
+						<label>Address</label>
+						<input type="textarea" name="address" class="input" id="address">
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<div class="form_3 data_info" style="display: none;">
+			<h2>Educational  Qualification</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="edu">Current Education Status</label>
+						<select name="edu" id="field" required>
+							<option value="pg">Education Status</option>
+							<option value="pg">Post Grad</option>
+							<option value="g">Graduate</option>
+							<option value="ug">Under Grad</option>
+							<option value="12g">12th Grade</option>
+							<option value="10g">10th Grade</option>
+							<option value="other">Other</option>
+						  </select>
+					</div>
+					<div class="input_wrap">
+						<label >University Name</label>
+						<input type="text" name="university" class="input" id="university">
+					</div>
+					<div class="input_wrap">
+						<label for="field">Field Of Study</label>
+						<select name="Field" id="field" required>
+							<option value="field">Field of Study</option>
+							<option value="cs">Computer Science</option>
+							<option value="law">Law</option>
+							<option value="def">Defence</option>
+							<option value="CA">Chartered Accountant</option>
+							<option value="medical">Medical</option>
+							<option value="Bsc">Basic Sciences</option>
+							<option value="other">Other</option>
+						  </select>
+					</div>
+					
+					<div class="input_wrap">
+						<label for="employement">Job Status</label>
+						<select name="job" id="field" required>
+							<option value="no status">Job Status</option>
+							<option value="emp">Employed</option>
+							<option value="unemp">Umemployed</option>
+							<option value="fresher">Fresher</option>
+							<option value="semp">Self-Employed</option>							
+							<option value="free">Freelancing</option>							
+							<option value="other">Other</option>
+						  </select>
+					</div>
+					<div class="input_wrap">
+						<label for="designation">Year Of Passing</label>
+						<input type="id" name="passingyr" class="input" id="passing" required>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="btns_wrap">
+		<div class="common_btns form_1_btns">
+			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_2_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_3_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			<input type="submit" class="btn_done" value="DONE">
+		</div>
+	</div>
+</div>
+
+<div class="modal_wrapper">
+	<div class="shadow"></div>
+	<div class="success_wrap">
+		<span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+		<p>You have successfully completed the survey form.</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+<footer> &copy; Created by Nidhi Charate</footer>
+</html>
