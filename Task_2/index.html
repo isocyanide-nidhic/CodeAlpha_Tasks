@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN now !</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <img src="welcome.jpeg" id="pic"  alt="welcomepic">
+    <div class="W0">
+        <div class="wel"><SPAN><h1>LOGIN PAGE</h1></SPAN></div>
+<br><br>
+        <div class="loginform">
+            
+            <form action="connection.php" method="post">
+                <p>
+                    <label>Username : </label>
+                    <input type="text" id="wrap" placeholder="Username" required name="F_USERNAME">
+                </p>
+                <p>
+                    <label>Password <span>: </span></label>
+                    <input type="password" id="wrap" placeholder="Password" required name="F_PASWD">
+                </p>
+                <br>
+                <div class="g-recaptcha" data-sitekey="6LciVdwnAAAAAMD4bm0A4wdhWvsPV3c7X47MqrZS"></div>
+                <br>
+                <p>
+                    <input type="submit" value="SIGN IN"  name="login" data-toggle="tooltip" data-placement="bottom" title="SIGN IN">
+                </p>
+                
+
+            </form>
+        </div>
+
+</body>
+
+
+</html>

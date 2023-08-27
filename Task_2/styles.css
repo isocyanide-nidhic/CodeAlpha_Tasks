@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: poppins;
+    font-weight: 400;
+    color: #666666;
+    background: white;
+}
+
+#pic{
+    
+    width: 50%;
+    position:absolute;
+    left: 0px;
+    height: 100%;
+    
+}
+.wel SPAN h1{
+    text-align: center;
+    font-size: 36px;
+}
+.W0{
+    width: 43%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    /*float: right;*/
+    display: inline-block;
+    color: black; 
+    
+}
+.loginform form{
+    text-align: center;
+}
+.loginform label{
+    font-size: 23px;
+}
+.loginform #wrap{
+    border-color: #694a4a;
+     width: 350px;
+	max-width: 50%;
+    height:40px;
+	margin: 0 auto 20px;
+    background-color: rgb(255, 248, 238);
+}
+.loginform input[type=submit] {
+    
+     text-decoration: none;
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     font: poppins;
+     font-weight:bold ;
+     cursor:pointer;
+     
+}
